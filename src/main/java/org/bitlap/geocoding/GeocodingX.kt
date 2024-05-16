@@ -13,9 +13,9 @@ import org.bitlap.geocoding.similarity.MatchedResult
  */
 open class GeocodingX(val ctx: Context) {
 
-    constructor(): this(false)
+    constructor(): this(true)
     constructor(strict: Boolean): this("core/region.dat", strict)
-    constructor(dataClassPath: String): this(dataClassPath, false)
+    constructor(dataClassPath: String): this(dataClassPath, true)
 
     /**
      * @param dataClassPath 自定义地址文档的classpath路径
